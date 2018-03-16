@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight|Raleway:400,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-letters{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: red;
+}
+.bg-letters h1{
+    font-family: 'Limelight',sans-serif;
+    font-size: 15em;
+    letter-spacing: .15em;
+    text-align: center;
+    font-kerning:auto;
+    color: rgb(5, 5, 5);
+}
+.main-view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    background: rgba(245, 0, 0, 0.5);
+    z-index: 1;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+}
+.main-nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    padding: .5em;
+    font-kerning:auto;
+    transition: all .4s ease-in-out;
+}
+.main-nav ul li a:hover{
+    background: rgb(60, 255, 0);
+    color:#333;
+    transform: scale(1.1) rotate(90deg); 
+    box-shadow: 0 0 1em 0 rgb(60, 255, 0),0 .5em 0 0 rgb(0, 255, 149);
+}
+.main-nav ul li a.default{
+    background: rgb(132, 0, 255);
+    box-shadow: none;
+    transform: none;
+}
+/*js use*/
+.theme-look{
+    font-size: 3.4em;
+    font-family: 'Raleway',sans-serif;
+    color: rgb(250, 250, 250);
+    text-shadow:0 0 1em #333;
+}
